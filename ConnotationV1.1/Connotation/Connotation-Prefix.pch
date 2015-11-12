@@ -1,0 +1,29 @@
+//
+//  Connotation-Prefix.pch
+//  Connotation
+//
+//  Created by xyz on 15/9/23.
+//  Copyright (c) 2015年 xyz. All rights reserved.
+//
+
+#ifndef Connotation_Connotation_Prefix_pch
+#define Connotation_Connotation_Prefix_pch
+
+//预编译文件 ， 在编译之前 系统会把 文件中中所有内容 导入在 其他所有的文件中
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    //导入 自定义的Define.h
+    #import "Define.h"
+#endif
+
+#endif
+
+
+
